@@ -65,7 +65,7 @@ const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
           className="w-full h-32 object-cover rounded-md mb-3"
         />
         <h3 className="font-semibold text-gray-800 mb-1">{drink.name}</h3>
-        <p className="text-orange-600 font-bold text-lg">¥{drink.price}</p>
+        <p className="text-orange-600 font-bold text-lg">${drink.price}</p>
       </div>
 
       {showOptions && (
@@ -156,7 +156,7 @@ const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
                 onClick={handleAddToOrder}
                 className="flex-1 py-3 px-4 bg-orange-500 text-white rounded-lg font-semibold hover:bg-orange-600"
               >
-                添加到订单 ¥{(drink.price * quantity).toFixed(2)}
+                添加到订单 ${(drink.price * quantity).toFixed(2)}
               </button>
             </div>
           </div>
