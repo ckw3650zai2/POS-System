@@ -248,7 +248,7 @@ const MenuManagement: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900">{drink.name}</h4>
                   <p className="text-sm text-gray-600">{drink.category}</p>
-                  <p className="text-lg font-bold text-orange-600">¥{drink.price}</p>
+                  <p className="text-lg font-bold text-orange-600">${drink.price}</p>
                 </div>
                 <div className={`px-2 py-1 rounded-full text-xs font-medium ${
                   drink.available 

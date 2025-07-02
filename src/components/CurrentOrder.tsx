@@ -72,7 +72,7 @@ const CurrentOrder: React.FC = () => {
                   {item.sugar} · {item.ice}
                 </p>
                 <p className="text-sm font-medium text-orange-600">
-                  ¥{item.price} × {item.quantity} = ¥{item.subtotal}
+                  ${item.price} × {item.quantity} = ${item.subtotal}
                 </p>
               </div>
               <button
@@ -107,7 +107,7 @@ const CurrentOrder: React.FC = () => {
       <div className="border-t border-gray-200 pt-4">
         <div className="flex justify-between items-center mb-4">
           <span className="text-lg font-semibold text-gray-800">总计</span>
-          <span className="text-2xl font-bold text-orange-600">¥{currentOrder.total}</span>
+          <span className="text-2xl font-bold text-orange-600">${currentOrder.total}</span>
         </div>
         
         <div className="space-y-2">

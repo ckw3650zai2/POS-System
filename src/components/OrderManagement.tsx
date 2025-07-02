@@ -155,7 +155,7 @@ const OrderManagement: React.FC = () => {
                   
                   <div className="flex items-center space-x-4">
                     <span className="font-semibold text-lg text-orange-600">
-                      ¥{order.total}
+                      ${order.total}
                     </span>
                     <div className="flex space-x-2">
                       {order.status === '待处理' ? (
@@ -204,7 +204,7 @@ const OrderManagement: React.FC = () => {
                               {item.sugar} · {item.ice} × {item.quantity}
                             </span>
                           </div>
-                          <span className="font-medium">¥{item.subtotal}</span>
+                          <span className="font-medium">${item.subtotal}</span>
                         </div>
                       ))}
                     </div>
